@@ -1,0 +1,41 @@
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/assets/img/bg-slider-06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        
+        h1 {
+            margin: 80px 0 0 0;
+            font-size: 4rem;
+            color: #976643;
+            letter-spacing: 3px;
+            font-weight: 200;
+        }
+        h2 {
+            margin: -30px 0 0 0;
+            padding: 0 0 100px 0;
+            font-family: $font2;
+            text-transform: uppercase;
+            color: white;
+            font-size: 4.5rem;
+            letter-spacing: 20px;
+        }
+        p {
+            color: white;
+            font-family: $font4;
+            text-transform: uppercase;
+            letter-spacing: 11.5px;
+            font-weight: 100;
+            margin-top: 50px;
+        }
+    }
+}
