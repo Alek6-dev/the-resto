@@ -898,7 +898,7 @@ main .section4 .section4-container .tickets .t1 {
 }
 main .section4 .section4-container .tickets .t1 .left-part {
   width: 35%;
-  background: url(/assets/img/event-01.jpg);
+  background: url(./assets/img/event-01.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -995,7 +995,7 @@ main .section4 .section4-container .tickets .t2 {
 }
 main .section4 .section4-container .tickets .t2 .left-part {
   width: 35%;
-  background: url(/assets/img/event-02.jpg);
+  background: url(./assets/img/event-02.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -1086,7 +1086,7 @@ main .section4 .section4-container .tickets .t3 {
   height: 100%; /* Hauteur du conteneur */
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%;
-  background-image: url(/assets/img/event-03.jpg);
+  background-image: url(./assets/img/event-03.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
