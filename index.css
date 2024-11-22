@@ -34,7 +34,7 @@ header {
   background-image: url(./assets/img/bg-slider-06.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 }
 header .header-content {
   display: -webkit-box;
@@ -53,19 +53,20 @@ header .header-content {
   height: 70%;
 }
 header .header-content h1 {
-  margin: 80px 0 0 0;
-  font-size: 4rem;
+  margin: 6vh 0 0 0;
+  font-size: 5vh;
   color: #976643;
   letter-spacing: 3px;
   font-weight: 200;
 }
 header .header-content h2 {
-  margin: -30px 0 0 0;
-  padding: 0 0 100px 0;
+  margin: -2vh 0 0 0;
+  padding: 0 0 6vh 0;
   font-family: poppins;
+  font-weight: 900;
   text-transform: uppercase;
   color: white;
-  font-size: 4.5rem;
+  font-size: 5vh;
   letter-spacing: 20px;
 }
 header .header-content p {
@@ -74,7 +75,7 @@ header .header-content p {
   text-transform: uppercase;
   letter-spacing: 11.5px;
   font-weight: 100;
-  margin-top: 50px;
+  margin-top: 5vh;
 }
 
 nav {
@@ -176,7 +177,7 @@ main .section1 {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 35vh;
+  height: 500px;
   background-color: #f0efea;
 }
 main .section1 .left-part {
