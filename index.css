@@ -73,7 +73,7 @@ header .header-content p {
   color: white;
   font-family: poppins2;
   text-transform: uppercase;
-  letter-spacing: 11.5px;
+  letter-spacing: 11px;
   font-weight: 100;
   margin-top: 5vh;
 }
@@ -171,13 +171,16 @@ nav .nav-icon {
 nav .nav-icon li {
   margin: 0 10px;
 }
+nav .nav-icon li i {
+  color: aliceblue;
+}
 
 main .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 40vh;
   background-color: #f0efea;
 }
 main .section1 .left-part {
@@ -377,7 +380,7 @@ main .section2 .section2-menu .section2-menu-container {
   width: 70%;
   max-width: 1100px;
   min-width: 650px;
-  height: 50vh;
+  height: 55vh;
 }
 main .section2 .section2-menu .section2-menu-container:nth-child(1) {
   grid-area: dish1;
@@ -440,7 +443,7 @@ main .section2 .section2-menu .section2-menu-container .dish8::after {
   margin-left: 15px;
   height: 1px;
   border-top: 1px dashed rgba(31, 31, 31, 0.2470588235);
-  margin-top: 130px;
+  margin-top: 13vh;
 }
 main .section2 .section2-menu .section2-menu-container .dish1 .dish-img,
 main .section2 .section2-menu .section2-menu-container .dish2 .dish-img,
@@ -560,7 +563,7 @@ main .section2 .section2-menu .section2-menu-container::before {
 main .section3 {
   background: #2b2a2a;
   width: 100%;
-  height: 650px;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,7 +580,7 @@ main .section3 .section3-container {
   display: flex;
   width: 85%;
   height: 80%;
-  max-width: 1600px;
+  max-width: 1500px;
 }
 main .section3 .section3-container .section3-left-part {
   background: black;
@@ -722,7 +725,6 @@ main .section3 .section3-container .section3-right-part .reservation {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "people date time" "name phone email" ". submit .";
   row-gap: 20px;
-  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -800,4 +802,395 @@ main .section3 .section3-container .section3-right-part .reservation button {
   font-family: poppins;
   font-size: 1.1rem;
   letter-spacing: 2px;
+}
+main .section4 {
+  background: #2b2a2a;
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3.5vh;
+}
+main .section4 .section4-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+main .section4 .section4-container .title {
+  display: grid;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+main .section4 .section4-container .title h2 {
+  font-family: allura;
+  font-size: 2.7rem;
+  font-weight: 200;
+  color: #976643;
+  margin-top: 10%;
+}
+@media screen and (min-width: 1700px) {
+  main .section4 .section4-container .title h2 {
+    font-size: 3rem;
+  }
+}
+main .section4 .section4-container .title h3 {
+  font-family: poppins;
+  text-transform: uppercase;
+  margin-top: -1vh;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: white;
+}
+@media screen and (min-width: 1700px) {
+  main .section4 .section4-container .title h3 {
+    font-size: 1.6rem;
+  }
+}
+main .section4 .section4-container .title img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+main .section4 .section4-container .tickets .grid-container {
+  height: 30vh;
+  margin-top: 20px;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  grid-template-columns: 65% 35%; /* La première colonne prend 65%, la seconde 35% */
+  grid-template-rows: auto auto; /* Deux lignes, taille automatique */
+  grid-template-areas: "t1 t3" "t2 t3"; /* La deuxième ligne, item2 occupe 65%, item3 occupe 35% */
+}
+main .section4 .section4-container .tickets .t1 {
+  grid-area: t1;
+  background-color: #f0efea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 180px;
+}
+main .section4 .section4-container .tickets .t1 .left-part {
+  width: 35%;
+  background: url(/assets/img/event-01.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+main .section4 .section4-container .tickets .t1 .left-part .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  z-index: 100;
+}
+main .section4 .section4-container .tickets .t1 .left-part .date h3 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: poppins;
+  font-size: 1.8vh;
+  color: #f0efea;
+  font-weight: 200;
+}
+main .section4 .section4-container .tickets .t1 .left-part .date h4 {
+  margin: 0;
+  text-align: center;
+  font-family: poppins2;
+  font-size: 1.2vh;
+  color: #f0efea;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+main .section4 .section4-container .tickets .t1 .left-part::after {
+  content: "";
+  background: #2b2a2a;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+main .section4 .section4-container .tickets .t1 .right-part {
+  width: 65%;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 3vw;
+}
+main .section4 .section4-container .tickets .t1 .right-part h3 {
+  font-family: roboto;
+  font-weight: 300;
+  padding-left: 2%;
+}
+main .section4 .section4-container .tickets .t1 .right-part h4 {
+  font-family: roboto;
+  font-weight: 100;
+  color: gray;
+}
+main .section4 .section4-container .tickets .t1 .right-part button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  border: none;
+  font-family: poppins2;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: none;
+}
+main .section4 .section4-container .tickets .t2 {
+  grid-area: t2;
+  background-color: #f0efea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+main .section4 .section4-container .tickets .t2 .left-part {
+  width: 35%;
+  background: url(/assets/img/event-02.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+main .section4 .section4-container .tickets .t2 .left-part .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  z-index: 100;
+}
+main .section4 .section4-container .tickets .t2 .left-part .date h3 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: poppins;
+  font-size: 1.8vh;
+  color: #f0efea;
+  font-weight: 200;
+}
+main .section4 .section4-container .tickets .t2 .left-part .date h4 {
+  margin: 0;
+  text-align: center;
+  font-family: poppins2;
+  font-size: 1.2vh;
+  color: #f0efea;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+main .section4 .section4-container .tickets .t2 .left-part::after {
+  content: "";
+  background: #2b2a2a;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+main .section4 .section4-container .tickets .t2 .right-part {
+  width: 65%;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 3vw;
+}
+main .section4 .section4-container .tickets .t2 .right-part h3 {
+  font-family: roboto;
+  font-weight: 300;
+  padding-left: 2%;
+}
+main .section4 .section4-container .tickets .t2 .right-part h4 {
+  font-family: roboto;
+  font-weight: 100;
+  color: gray;
+}
+main .section4 .section4-container .tickets .t2 .right-part button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  border: none;
+  font-family: poppins2;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: none;
+}
+main .section4 .section4-container .tickets .t3 {
+  grid-area: t3;
+  width: 100%; /* Largeur du conteneur */
+  height: 100%; /* Hauteur du conteneur */
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  background-image: url(/assets/img/event-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .section4 .section4-container .tickets .t3 .contain {
+  display: grid;
+  position: relative;
+  justify-items: center;
+  background-color: #f0efea;
+  width: 85%;
+  height: 85%;
+}
+main .section4 .section4-container .tickets .t3::after {
+  content: "";
+  background: #2b2a2a;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -9%);
+          transform: translate(-50%, -9%);
+  z-index: 1;
+}
+main .section4 .section4-container .tickets .t3 .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  z-index: 100;
+  margin-top: -2px;
+}
+main .section4 .section4-container .tickets .t3 .date h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: poppins;
+  font-size: 1.8vh;
+  color: #f0efea;
+  font-weight: 200;
+}
+main .section4 .section4-container .tickets .t3 .date h4 {
+  margin: 0;
+  text-align: center;
+  font-family: poppins2;
+  font-size: 1.2vh;
+  color: #f0efea;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+main .section4 .section4-container .tickets .t3 .text {
+  width: 65%;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -40%;
+}
+main .section4 .section4-container .tickets .t3 .text h3 {
+  font-family: roboto;
+  font-weight: 300;
+  padding-left: 2%;
+}
+main .section4 .section4-container .tickets .t3 .text h4 {
+  font-family: roboto;
+  font-weight: 100;
+  color: gray;
+}
+main .section4 .section4-container .tickets .t3 .text button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  font-family: poppins2;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: none;
 }/*# sourceMappingURL=index.css.map */

@@ -2,7 +2,7 @@ main {
     .section1 {
         display: flex;
         width: 100%;
-        height: 500px;
+        height: 40vh;
         background-color: #f0efea;
 
         .left-part {
@@ -185,7 +185,7 @@ main {
                 width: 70%;
                 max-width: 1100px;
                 min-width: 650px;
-                height: 50vh;
+                height: 55vh;
 
                 &:nth-child(1) {
                     grid-area: dish1;
@@ -234,7 +234,7 @@ main {
                             margin-left: 15px;
                             height: 1px;
                             border-top: 1px dashed #1f1f1f3f;
-                            margin-top: 130px;
+                            margin-top: 13vh;
                         }
 
                     .dish-img {
@@ -304,7 +304,7 @@ main {
     .section3 {
         background: #2b2a2a;
         width: 100%;
-        height: 650px;
+        height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -313,7 +313,7 @@ main {
             display: flex;
             width: 85%;
             height: 80%;
-            max-width: 1600px;
+            max-width: 1500px;
             
             .section3-left-part {
                 background: black;
@@ -440,7 +440,6 @@ main {
                     "name phone email"
                     ". submit .";
                     row-gap: 20px;
-                    position: relative;
                     justify-content: center;
                     text-align: center;
                     justify-items: center;
@@ -510,6 +509,353 @@ main {
                     }
                 }
             }
+        }
+    }
+
+    .section4 {
+        background: #2b2a2a;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        padding-top: 3.5vh;
+
+
+        .section4-container {
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+
+
+            .title {
+                display: grid;
+                margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+
+                h2 {
+                    font-family: $font1;
+                    font-size: 2.7rem;
+                    font-weight: 200;
+                    color: #976643;
+                    margin-top: 10%;
+
+                    @media screen and (min-width:1700px) {
+                        font-size: 3rem;
+                    }
+                }
+                h3 {
+                    font-family: $font2;
+                    text-transform: uppercase;
+                    margin-top: -1vh;
+                    font-size: 1.8rem;
+                    letter-spacing: 2px;
+                    color: white;
+
+                    @media screen and (min-width:1700px) {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                img {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            .tickets {
+
+                .grid-container {
+                    height: 30vh;
+                    margin-top: 20px;
+                    display: grid;
+                    justify-content: center;
+                    row-gap: 20px;
+                    column-gap: 20px;
+                    grid-template-columns: 65% 35%;  /* La première colonne prend 65%, la seconde 35% */
+                    grid-template-rows: auto auto;   /* Deux lignes, taille automatique */
+                    grid-template-areas:
+                      "t1 t3"   /* La première ligne, item1 occupe 65%, item3 occupe 35% */
+                      "t2 t3";  /* La deuxième ligne, item2 occupe 65%, item3 occupe 35% */
+                  }
+                  
+                  .t1 {
+                    grid-area: t1;
+                    background-color: #f0efea;
+                    display: flex;
+                    width: 100%;
+                    height: 180px;
+
+
+                    .left-part {
+                        width: 35%;
+                        background: url(/assets/img/event-01.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        position: relative;
+
+                        .date {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            z-index: 100;
+
+                            h3 {
+                                margin: 0;
+                                text-align: center;
+                                text-transform: uppercase;
+                                font-family: $font2;
+                                font-size: 1.8vh;
+                                color: #f0efea;
+                                font-weight: 200;
+                            }
+                            h4 {
+                                margin: 0;
+                                text-align: center;
+                                font-family: $font4;
+                                font-size: 1.2vh;
+                                color: #f0efea;
+                                font-weight: 100;
+                                letter-spacing: 0.5px;
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            background: #2b2a2a;
+                            width: 70px;
+                            height: 70px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: 1;
+                        }
+                    }
+                    .right-part {
+                        width: 65%;
+                        display: grid;
+                        align-items: center;
+                        box-sizing: border-box;
+                        padding: 25px 3vw;
+
+                        h3 {
+                            font-family: $font3;
+                            font-weight: 300;
+                            padding-left: 2%;
+                        }
+
+                        h4 {
+                            font-family: $font3;
+                            font-weight: 100;
+                            color: gray;
+                        }
+
+                        button {
+                            display: flex;
+                            justify-content: left;
+                            border: none;
+                            font-family: $font4;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            background: none;
+                        }
+                    }
+                  }
+                  
+                  .t2 {
+                    grid-area: t2;
+                    background-color: #f0efea;
+                    display: flex;
+                    width: 100%;
+                    height: 180px;
+                    position: relative;
+
+                    .left-part {
+                        width: 35%;
+                        background: url(/assets/img/event-02.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        position: relative;
+
+                        .date {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            z-index: 100;
+
+                            h3 {
+                                margin: 0;
+                                text-align: center;
+                                text-transform: uppercase;
+                                font-family: $font2;
+                                font-size: 1.8vh;
+                                color: #f0efea;
+                                font-weight: 200;
+                            }
+                            h4 {
+                                margin: 0;
+                                text-align: center;
+                                font-family: $font4;
+                                font-size: 1.2vh;
+                                color: #f0efea;
+                                font-weight: 100;
+                                letter-spacing: 0.5px;
+                            }
+                        }
+                        &::after {
+                            content: "";
+                            background: #2b2a2a;
+                            width: 70px;
+                            height: 70px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: 1;
+                        }
+                    }
+
+                    .right-part {
+                        width: 65%;
+                        display: grid;
+                        align-items: center;
+                        box-sizing: border-box;
+                        padding: 25px 3vw;
+
+                        h3 {
+                            font-family: $font3;
+                            font-weight: 300;
+                            padding-left: 2%;
+                        }
+
+                        h4 {
+                            font-family: $font3;
+                            font-weight: 100;
+                            color: gray;
+                        }
+
+                        button {
+                            display: flex;
+                            justify-content: left;
+                            border: none;
+                            font-family: $font4;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            background: none;
+                        }
+                    }
+                  }
+                  
+                  .t3 {
+                    grid-area: t3;
+                    width: 100%; /* Largeur du conteneur */
+                    height: 100%; /* Hauteur du conteneur */
+                    flex-basis: 75%;
+                    background-image: url(/assets/img/event-03.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    
+                    .contain {
+                        display: grid;
+                        position: relative;
+                        justify-items: center;
+                        background-color: #f0efea;
+                        width: 85%;
+                        height: 85%;
+                    }
+                    
+
+                        &::after {
+                            content: "";
+                            background: #2b2a2a;
+                            width: 70px;
+                            height: 70px;
+                            position: absolute;
+                            top: 9%;
+                            left: 50%;
+                            transform: translate(-50%, -9%);
+                            z-index: 1;
+                        }
+                        .date {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 70px;
+                            z-index: 100;
+                            margin-top: -2px;
+
+                            h3 {
+                                text-align: center;
+                                text-transform: uppercase;
+                                font-family: $font2;
+                                font-size: 1.8vh;
+                                color: #f0efea;
+                                font-weight: 200;
+                            }
+                            h4 {
+                                margin: 0;
+                                text-align: center;
+                                font-family: $font4;
+                                font-size: 1.2vh;
+                                color: #f0efea;
+                                font-weight: 100;
+                                letter-spacing: 0.5px;
+                            }
+                        }
+
+                        .text {
+                            width: 65%;
+                            display: grid;
+                            align-items: center;
+                            justify-content: center;
+                            align-content: space-evenly;
+                            text-align: center;
+                            box-sizing: border-box;
+                            margin-top: -40%;
+    
+                            h3 {
+                                font-family: $font3;
+                                font-weight: 300;
+                                padding-left: 2%;
+                            }
+    
+                            h4 {
+                                font-family: $font3;
+                                font-weight: 100;
+                                color: gray;
+                            }
+    
+                            button {
+                                display: flex;
+                                justify-content: center;
+                                border: none;
+                                font-family: $font4;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                background: none;
+                            }
+                        }
+                  }
+
+            }
+
         }
     }
 }
