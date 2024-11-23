@@ -20,6 +20,9 @@
   margin: 0;
   list-style: none;
   position: relative;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 * li {
   list-style: none;
@@ -136,10 +139,17 @@ nav .pages {
   margin: 0 20px;
 }
 nav .pages ul {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4vw; /* Espacement uniforme */
   width: 100%;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 1vw;
   max-width: 1000px;
 }
 nav .pages li {
@@ -236,14 +246,15 @@ main .section1 .left-part img:nth-of-type(2) {
 main .section1 .left-part h4 {
   font-family: roboto;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 main .section1 .left-part h5 {
   font-family: poppins2;
+  color: #976643;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 15px;
 }
 main .section1 .right-part {
@@ -806,7 +817,7 @@ main .section3 .section3-container .section3-right-part .reservation button {
 main .section4 {
   background: #2b2a2a;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -982,6 +993,7 @@ main .section4 .section4-container .tickets .t1 .right-part button {
   font-weight: 700;
   text-transform: uppercase;
   background: none;
+  cursor: pointer;
 }
 main .section4 .section4-container .tickets .t2 {
   grid-area: t2;
@@ -1079,6 +1091,7 @@ main .section4 .section4-container .tickets .t2 .right-part button {
   font-weight: 700;
   text-transform: uppercase;
   background: none;
+  cursor: pointer;
 }
 main .section4 .section4-container .tickets .t3 {
   grid-area: t3;
@@ -1193,4 +1206,255 @@ main .section4 .section4-container .tickets .t3 .text button {
   font-weight: 700;
   text-transform: uppercase;
   background: none;
+}
+main .section5 {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25vh;
+  width: 100%;
+  background-color: #2b2a2a;
+  position: relative;
+}
+main .section5 .citation-container {
+  background-color: #f0efea;
+  width: 60%;
+  height: 20vh;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+  z-index: 2;
+}
+main .section5 .citation-container img {
+  position: absolute;
+  border-radius: 150px;
+  width: 65px;
+  height: 65px;
+  top: -3vh;
+}
+main .section5 .citation-container p {
+  font-family: roboto;
+  font-size: 0.9rem;
+  margin: 5%;
+}
+main .section5 .citation-container h4 {
+  font-family: roboto;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-top: -1.5vh;
+}
+main .section5 .citation-container h5 {
+  font-family: poppins2;
+  color: #976643;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+main .section5 .map-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 15vh;
+}
+main .section5 .map-container .map {
+  width: 100%;
+  height: 100%;
+  background: url(/assets/img/gmap.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(/assets/img/bg-footer.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  margin-top: 15vh;
+  color: white;
+}
+footer .left-part {
+  width: 50%;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .left-part .left-part-container {
+  display: grid;
+  margin: auto 3vw auto 6vw;
+}
+footer .left-part .left-part-container h3 {
+  font-family: allura;
+  font-size: 2.7rem;
+  font-weight: 200;
+  color: #976643;
+}
+footer .left-part .left-part-container p {
+  font-family: roboto;
+  font-size: 0.9rem;
+  color: gray;
+  line-height: 30px;
+}
+footer .right-part {
+  width: 50%;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .right-part .right-part-container {
+  display: grid;
+  margin: auto 6vw auto 3vw;
+}
+footer .right-part .right-part-container h4 {
+  text-transform: uppercase;
+  font-family: roboto;
+  margin-bottom: 10px;
+  margin-left: 1vw;
+}
+footer .right-part .right-part-container .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+footer .right-part .right-part-container .subscribe input {
+  border: 1px solid rgb(88, 77, 66);
+  background: none;
+  height: 35px;
+  width: 50%;
+  color: white;
+  padding-left: 1vw;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .right-part .right-part-container .subscribe input:focus {
+  border: 1px solid rgb(180, 165, 150);
+  color: white;
+  font-family: roboto;
+  font-size: 1.2rem;
+  outline: none;
+}
+footer .right-part .right-part-container .subscribe input::-webkit-input-placeholder {
+  font-family: roboto;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer .right-part .right-part-container .subscribe input::-moz-placeholder {
+  font-family: roboto;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer .right-part .right-part-container .subscribe input:-ms-input-placeholder {
+  font-family: roboto;
+  font-size: 0.9rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer .right-part .right-part-container .subscribe input::-ms-input-placeholder {
+  font-family: roboto;
+  font-size: 0.9rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer .right-part .right-part-container .subscribe input::placeholder {
+  font-family: roboto;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer .right-part .right-part-container .subscribe button {
+  margin-left: 50px;
+  border: 1px solid rgb(88, 77, 66);
+  background: none;
+  border-radius: 50px;
+  width: 12vw;
+  height: 35px;
+  color: white;
+  font-size: 0.8rem;
+  font-family: roboto;
+  line-height: 1.2;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+footer .right-part .right-part-container .subscribe button:hover {
+  background: rgb(88, 77, 66);
+  border-color: transparent;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+footer .right-part .right-part-container .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+footer .right-part .right-part-container .icon h4 {
+  margin-bottom: 0;
+}
+footer .right-part .right-part-container .icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3vw;
+  gap: 2vw;
+}
+footer .right-part .right-part-container .icon ul a {
+  color: white;
 }/*# sourceMappingURL=index.css.map */

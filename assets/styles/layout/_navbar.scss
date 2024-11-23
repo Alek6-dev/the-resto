@@ -36,10 +36,11 @@ nav {
         margin:  0 20px;
 
         ul {
-            display: grid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4vw; /* Espacement uniforme */
             width: 100%;
-            grid-template-columns: repeat(7,1fr);
-            gap: 1vw;
             max-width: 1000px;
         }
         

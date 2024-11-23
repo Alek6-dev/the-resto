@@ -1,0 +1,133 @@
+footer {
+    display: flex;
+    background: url(/assets/img/bg-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    margin-top: 15vh;
+    color: white;
+
+    .left-part {
+        width: 50%;
+        display: grid;
+        align-items: center;
+
+        .left-part-container {
+            display: grid;
+            margin: auto 3vw auto 6vw;
+
+            h3 {
+                font-family: $font1;
+                font-size: 2.7rem;
+                font-weight: 200;
+                color: #976643;
+            }
+
+            p {
+                font-family: $font3;
+                font-size: 0.9rem;
+                color: gray;
+                line-height: 30px;
+            }
+
+        }
+    }
+    .right-part {
+        width: 50%;
+        display: grid;
+        align-items: center;
+
+        .right-part-container {
+            display: grid;
+            margin: auto 6vw auto 3vw;
+            
+            h4 {
+                text-transform: uppercase;
+                font-family: $font3;
+                margin-bottom: 10px;
+                margin-left: 1vw;
+            }
+
+            .subscribe {
+                display: flex;
+                gap: 20px;
+
+                input {
+                    border: 1px solid rgb(88, 77, 66);
+                    background: none;
+                    height: 35px;
+                    width: 50%;
+                    color: white;
+                    padding-left: 1vw;
+                    font-size: 1.2rem;
+                    display: flex;
+                    align-items: center;
+
+
+                    &:focus {
+                        border: 1px solid rgb(180, 165, 150);
+                        color: white;
+                        font-family: $font3;
+                        font-size: 1.2rem;
+                        outline: none;
+                    }
+                    
+                    &::placeholder {
+                        font-family: $font3;
+                        font-size: 0.9rem;
+                        display: flex;
+                        align-items: center;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                    }
+                }
+                    
+                button {
+                    margin-left: 50px;
+                    border: 1px solid rgb(88, 77, 66);
+                    background: none;
+                    border-radius: 50px;
+                    width: 12vw;
+                    height: 35px;
+                    color: white;
+                    font-size: 0.8rem;
+                    font-family: $font3;
+                    line-height: 1.2;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    transition: transform 0.5s ease;
+
+
+                    &:hover {
+                        background: rgb(88, 77, 66);
+                        border-color: transparent;
+                        transform: scale(1.1);
+                    }
+                    }
+            }
+            
+            .icon {
+                display: flex;
+                margin-top: 40px;
+
+                h4 {
+                    margin-bottom: 0;
+                }
+                
+                ul {
+                    display: flex;
+                    margin-left: 3vw;
+                    gap: 2vw;
+                    
+                    a {
+                        color: white;
+                    }
+                    
+                }
+            }
+        }
+        }
+}

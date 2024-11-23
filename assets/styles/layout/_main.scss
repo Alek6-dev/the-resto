@@ -48,14 +48,15 @@ main {
             h4 {
                 font-family: $font3;
                 letter-spacing: 2px;
-                font-weight: 600;
+                font-weight: 400;
                 margin-bottom: 10px;
             }
             h5 {
                 font-family: $font4;
+                color: #976643;
                 text-transform: uppercase;
                 letter-spacing: 1px;
-                font-weight: 300;
+                font-weight: 500;
                 margin-bottom: 15px;
             }
 
@@ -515,7 +516,7 @@ main {
     .section4 {
         background: #2b2a2a;
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         display: flex;
         justify-content: center;
         padding-top: 3.5vh;
@@ -667,6 +668,7 @@ main {
                             font-weight: 700;
                             text-transform: uppercase;
                             background: none;
+                            cursor: pointer;
                         }
                     }
                   }
@@ -753,6 +755,7 @@ main {
                             font-weight: 700;
                             text-transform: uppercase;
                             background: none;
+                            cursor: pointer;
                         }
                     }
                   }
@@ -856,6 +859,76 @@ main {
 
             }
 
+        }
+    }
+
+
+    .section5 {
+        display: grid;
+        justify-content: center;
+        height: 25vh;
+        width: 100%;
+        background-color: #2b2a2a;
+        position: relative;
+
+
+        .citation-container {
+            background-color: #f0efea;
+            width: 60%;
+            height: 20vh;
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            margin: 0 auto;
+            text-align: center;
+            align-content: center;
+            position: relative;
+            z-index: 2;
+
+            img {
+                position: absolute;
+                border-radius: 150px;
+                width: 65px;
+                height: 65px;
+                top: -3vh;
+            }
+            p {
+                font-family: $font3;
+                font-size: 0.9rem;
+                margin: 5%;
+            }
+            h4 {
+                font-family: $font3;
+                letter-spacing: 2px;
+                font-weight: 400;
+                margin-top: -1.5vh;
+
+            }
+            h5 {
+                font-family: $font4;
+                color: #976643;
+                letter-spacing: 1px;
+                font-weight: 500;
+                margin-top: 8px;
+            }
+        }
+
+        .map-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 15vh;
+            
+            
+            .map {
+                width: 100%;
+                height: 100%;
+                background: url(/assets/img/gmap.jpg);
+                background-position: center;
+                background-size: cover;
+            }
         }
     }
 }
