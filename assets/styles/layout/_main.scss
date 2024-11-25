@@ -3,6 +3,7 @@ main {
         display: flex;
         width: 100%;
         height: 40vh;
+        min-height: 450px;
         background-color: #f0efea;
         @media screen and (max-width:600px) {
             height: 70vh;
@@ -219,12 +220,13 @@ main {
             background-repeat: no-repeat;
             background-position: center;
             background-size: auto 100%;
-
+            
             @media screen and (min-width: 1850px) {
                 background-size: 100% 100%;
             }
-
+            
             .section2-menu-container {
+                min-height: 700px;
                 @media screen and (max-width:750px) {
                     display: flex;
                     flex-direction: column;
@@ -295,6 +297,7 @@ main {
                     display: flex;
                     align-items: center;
                     width: 100%;
+                    min-height: 150px;
                     margin: 0 auto;
 
                         &::after {
@@ -306,7 +309,7 @@ main {
                             margin-left: 15px;
                             height: 1px;
                             border-top: 1px dashed #1f1f1f3f;
-                            margin-top: 13vh;
+                            margin-top: 150px;
 
                             @media screen and (max-width:750px) {
                                 display: none;
@@ -406,6 +409,7 @@ main {
         background: #2b2a2a;
         width: 100%;
         height: 50vh;
+        min-height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -686,6 +690,7 @@ main {
         background: #2b2a2a;
         width: 100%;
         height: 60vh;
+        min-height: 750px;
         display: flex;
         justify-content: center;
         padding-top: 3.5vh;
@@ -1044,6 +1049,7 @@ main {
         display: grid;
         justify-content: center;
         height: 25vh;
+        min-height: 300px;
         width: 100%;
         background-color: #2b2a2a;
         position: relative;
@@ -1057,6 +1063,7 @@ main {
             background-color: #f0efea;
             width: 60%;
             height: 20vh;
+            min-height: 230px;
             display: grid;
             justify-content: center;
             justify-items: center;
