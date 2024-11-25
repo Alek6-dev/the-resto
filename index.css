@@ -631,7 +631,7 @@ main .section2 .section2-menu .section2-menu-container .dish8 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 150px;
+  min-height: 100px;
   margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
