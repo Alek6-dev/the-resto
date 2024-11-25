@@ -31,8 +31,9 @@ header {
             letter-spacing: 20px;
 
             @media screen and (max-width:750px) {
-                font-size: 8vw;
+                font-size: 3remvw;
                 margin-top: 3vh;
+                letter-spacing: 10px;
             }
         }
         p {

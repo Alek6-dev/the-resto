@@ -77,8 +77,9 @@ header .header-content h2 {
 }
 @media screen and (max-width: 750px) {
   header .header-content h2 {
-    font-size: 8vw;
+    font-size: 3remvw;
     margin-top: 3vh;
+    letter-spacing: 10px;
   }
 }
 header .header-content p {
@@ -117,6 +118,11 @@ nav {
   width: 100%;
   color: white;
 }
+@media screen and (max-width: 750px) {
+  nav {
+    padding: 10px 0 0;
+  }
+}
 nav .logo {
   width: 20%;
   height: 100%;
@@ -137,7 +143,7 @@ nav .logo {
         -ms-flex-pack: center;
             justify-content: center;
     width: 15%;
-    margin: 0 30px 0 0;
+    margin: 10px 30px 0 0;
   }
 }
 @media screen and (max-width: 750px) {
@@ -300,7 +306,7 @@ main .section1 {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   background-color: #f0efea;
 }
 main .section1 .left-part {
@@ -334,6 +340,11 @@ main .section1 .left-part h2 {
   margin-bottom: -10px;
   margin-top: 15px;
 }
+@media screen and (max-width: 750px) {
+  main .section1 .left-part h2 {
+    margin: 0;
+  }
+}
 main .section1 .left-part h3 {
   font-family: poppins;
   text-transform: uppercase;
@@ -354,6 +365,11 @@ main .section1 .left-part p {
   font-family: roboto;
   font-size: 0.9rem;
   margin: 5px 5%;
+}
+@media screen and (max-width: 750px) {
+  main .section1 .left-part p {
+    font-size: 0.8rem;
+  }
 }
 main .section1 .left-part img:nth-of-type(2) {
   margin: 20px;
@@ -874,7 +890,7 @@ main .section3 {
 }
 @media screen and (max-width: 600px) {
   main .section3 {
-    height: 100vh;
+    height: 200vh;
   }
 }
 main .section3 .section3-container {
@@ -1612,6 +1628,12 @@ main .section5 {
   background-color: #2b2a2a;
   position: relative;
 }
+@media screen and (max-width: 600px) {
+  main .section5 {
+    height: 90vh;
+    margin-top: -100px;
+  }
+}
 main .section5 .citation-container {
   background-color: #f0efea;
   width: 60%;
@@ -1630,7 +1652,7 @@ main .section5 .citation-container {
 }
 @media screen and (max-width: 600px) {
   main .section5 .citation-container {
-    height: 30vh;
+    height: 70vh;
   }
 }
 main .section5 .citation-container img {

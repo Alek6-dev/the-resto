@@ -2,7 +2,7 @@ main {
     .section1 {
         display: flex;
         width: 100%;
-        height: 40vh;
+        height: 60vh;
         background-color: #f0efea;
 
 
@@ -14,12 +14,12 @@ main {
             margin: 25px;
             flex-direction: column;
             border: dashed 1px #976643;
-
+            
             @media screen and (max-width:750px) {
                 width: 100%;
                 justify-content: center;
             }
-
+            
             h2 {
                 font-family: $font1;
                 font-size: 2rem;
@@ -27,6 +27,9 @@ main {
                 color: #976643;
                 margin-bottom: -10px;
                 margin-top: 15px;
+                @media screen and (max-width:750px) {
+                    margin: 0;
+                }
             }
             h3 {
                 font-family: $font2;
@@ -45,6 +48,9 @@ main {
                 font-family: $font3;
                 font-size: 0.9rem;
                 margin: 5px 5%;
+                @media screen and (max-width:750px) {
+                    font-size: 0.8rem;
+                }
             }
             img:nth-of-type(2) {
                 margin: 20px;
@@ -404,7 +410,7 @@ main {
         align-items: center;
 
         @media screen and (max-width:600px) {
-            height: 100vh;
+            height: 200vh;
         }
         .section3-container {
             display: flex;
@@ -1040,6 +1046,10 @@ main {
         width: 100%;
         background-color: #2b2a2a;
         position: relative;
+        @media screen and (max-width:600px) {
+            height: 90vh;
+            margin-top: -100px;
+        }
 
 
         .citation-container {
@@ -1056,7 +1066,7 @@ main {
             z-index: 2;
 
             @media screen and (max-width:600px) {
-                height: 30vh;
+                height: 70vh;
             }
 
             img {
