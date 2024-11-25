@@ -4,12 +4,9 @@ main {
         width: 100%;
         height: 40vh;
         background-color: #f0efea;
-        
         @media screen and (max-width:600px) {
             height: 70vh;
         }
-
-
 
         .left-part {
             width: 50%;
