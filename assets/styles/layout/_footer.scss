@@ -6,11 +6,18 @@ footer {
     height: 20vh;
     margin-top: 15vh;
     color: white;
+    @media screen and (max-width:600px) {
+        background: #2b2a2a;
+    }
 
     .left-part {
         width: 50%;
         display: grid;
         align-items: center;
+        @media screen and (max-width:600px) {
+            display: none;
+        }
+
 
         .left-part-container {
             display: grid;
@@ -36,10 +43,17 @@ footer {
         width: 50%;
         display: grid;
         align-items: center;
+        @media screen and (max-width:600px) {
+            width: 100%;
+            justify-content: center;
+        }
 
         .right-part-container {
             display: grid;
             margin: auto 6vw auto 3vw;
+            @media screen and (max-width:600px) {
+                margin: 0 auto;
+            }
             
             h4 {
                 text-transform: uppercase;
@@ -62,6 +76,9 @@ footer {
                     font-size: 1.2rem;
                     display: flex;
                     align-items: center;
+                    @media screen and (max-width:600px) {
+                        width: 100%;
+                    }
 
 
                     &:focus {
@@ -99,10 +116,15 @@ footer {
                     align-items: center;
                     box-sizing: border-box;
                     transition: transform 0.5s ease;
+                    @media screen and (max-width:600px) {
+                        width: 70%;
+                        justify-content: center;
+                        margin-left: 10px;
+                    }
 
 
                     &:hover {
-                        background: rgb(88, 77, 66);
+                        background: rgb(87, 64, 43);
                         border-color: transparent;
                         transform: scale(1.1);
                     }
@@ -122,8 +144,14 @@ footer {
                     margin-left: 3vw;
                     gap: 2vw;
                     
-                    a {
+                    i {
                         color: white;
+                        transition: transform 0.2s ease;
+
+                        &:hover {
+                            color: #976643;
+                            transform: scale(1.3);
+                        }
                     }
                     
                 }

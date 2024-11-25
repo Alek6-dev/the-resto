@@ -29,6 +29,11 @@ header {
             color: white;
             font-size: 5vh;
             letter-spacing: 20px;
+
+            @media screen and (max-width:750px) {
+                font-size: 8vw;
+                margin-top: 3vh;
+            }
         }
         p {
             color: white;
@@ -37,6 +42,13 @@ header {
             letter-spacing: 11px;
             font-weight: 100;
             margin-top: 5vh;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+
+            @media screen and (max-width:850px) {
+                letter-spacing: 1vw;
+            }
         }
     }
 }
